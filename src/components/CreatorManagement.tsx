@@ -112,7 +112,8 @@ const initialCreators: Creator[] = [
     socialMedia: {
       instagram: "@kurama_smash",
       twitter: "@KuramaPlays",
-      youtube: "@KuramaGaming"
+      youtube: "@KuramaGaming",
+      tiktok: "@kurama.gaming"
     },
     assets: {
       profileImages: ["profile1.jpg", "action_shot.jpg"],
@@ -146,7 +147,8 @@ const initialCreators: Creator[] = [
     bio: "Popular streamer and co-founder of O3. Known for variety content and community building.",
     socialMedia: {
       instagram: "@ninalin",
-      twitter: "@NinaStreams"
+      twitter: "@NinaStreams",
+      tiktok: "@nina.streams"
     },
     assets: {
       profileImages: ["nina_profile.jpg"],
@@ -548,6 +550,22 @@ export default function CreatorManagement({
                               <span>{selectedCreator.socialMedia.youtube || 'Not set'}</span>
                             )}
                           </div>
+                          <div className="flex items-center space-x-2">
+                            <MessageSquare className="w-4 h-4 text-black" />
+                            {editingCreator === selectedCreator.id ? (
+                              <Input
+                                value={selectedCreator.socialMedia.tiktok || ''}
+                                onChange={(e) => setSelectedCreator({
+                                  ...selectedCreator,
+                                  socialMedia: { ...selectedCreator.socialMedia, tiktok: e.target.value }
+                                })}
+                                placeholder="@username"
+                                className="h-6 text-sm"
+                              />
+                            ) : (
+                              <span>{selectedCreator.socialMedia.tiktok || 'Not set'}</span>
+                            )}
+                          </div>
                         </div>
                       </div>
 
@@ -887,7 +905,7 @@ export default function CreatorManagement({
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div>
                   <label className="block text-sm font-medium mb-2">Instagram</label>
                   <Input
@@ -919,6 +937,17 @@ export default function CreatorManagement({
                       socialMedia: { ...newCreator.socialMedia, youtube: e.target.value }
                     })}
                     placeholder="@channel"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium mb-2">TikTok</label>
+                  <Input
+                    value={newCreator.socialMedia?.tiktok || ""}
+                    onChange={(e) => setNewCreator({
+                      ...newCreator,
+                      socialMedia: { ...newCreator.socialMedia, tiktok: e.target.value }
+                    })}
+                    placeholder="@username"
                   />
                 </div>
               </div>

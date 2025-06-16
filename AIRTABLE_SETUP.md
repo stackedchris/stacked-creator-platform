@@ -127,8 +127,8 @@ Last Updated (Date)
 - **Use:** Timeline planning and scheduling
 
 ### 5. **Social Media Hub**
-- **Filter:** Instagram, Twitter, or YouTube is not empty
-- **Fields:** Name, Instagram, Twitter, YouTube, Category
+- **Filter:** Instagram, Twitter, YouTube, or TikTok is not empty
+- **Fields:** Name, Instagram, Twitter, YouTube, TikTok, Category
 - **Use:** Social media outreach and monitoring
 
 ---

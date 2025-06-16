@@ -47,7 +47,8 @@ const creators = [
     socialMedia: {
       instagram: "@kurama_smash",
       twitter: "@KuramaPlays",
-      youtube: "@KuramaGaming"
+      youtube: "@KuramaGaming",
+      tiktok: "@kurama.gaming"
     },
     assets: { profileImages: [], videos: [], pressKit: [] },
     strategy: {
@@ -76,7 +77,8 @@ const creators = [
     bio: "Popular streamer and co-founder",
     socialMedia: {
       instagram: "@ninalin",
-      twitter: "@NinaStreams"
+      twitter: "@NinaStreams",
+      tiktok: "@nina.streams"
     },
     assets: { profileImages: [], videos: [], pressKit: [] },
     strategy: {
@@ -105,7 +107,8 @@ const creators = [
     bio: "DJ and creative entrepreneur",
     socialMedia: {
       instagram: "@edwardso",
-      twitter: "@EdwardSoMusic"
+      twitter: "@EdwardSoMusic",
+      tiktok: "@edward.djmusic"
     },
     assets: { profileImages: [], videos: [], pressKit: [] },
     strategy: {
